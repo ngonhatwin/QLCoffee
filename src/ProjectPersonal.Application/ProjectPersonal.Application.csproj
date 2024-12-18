@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectPersonal.Domain\ProjectPersonal.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+	<PackageReference Include="BloomFilter.NetCore" Version="2.4.0" />
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.68.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.11" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.11" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Feature\Category\Commands\Delete\" />
+    <Folder Include="Feature\Category\Commands\Update\" />
+    <Folder Include="Feature\Login\Google\Validation\" />
+    <Folder Include="Feature\Login\Google\Querys\" />
+    <Folder Include="Feature\Login\Oauth\Querys\" />
+  </ItemGroup>
+
+</Project>
