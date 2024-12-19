@@ -7,6 +7,7 @@ using ProjectPersonal.Infrastructure;
 using System.Reflection;
 using Microsoft.OpenApi.Models;
 using ProjectPersonal.Middleware;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 

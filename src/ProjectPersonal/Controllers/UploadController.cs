@@ -8,6 +8,7 @@ namespace ProjectPersonal.Controllers
     public class UploadController : ControllerBase
     {
         [HttpPost]
+        [ApiExplorerSettings(IgnoreApi = true)]
         public IActionResult Upload([FromForm] IFormFile file)
         {
             if (file == null || file.Length == 0)

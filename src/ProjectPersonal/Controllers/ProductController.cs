@@ -26,7 +26,7 @@ namespace ProjectPersonal.Controllers
         /// <response code="400">Thông tin không hợp lệ.</response>
         /// <response code="500">Lỗi từ hệ thống.</response>
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] CreateProductCommand command)
+        public async Task<IActionResult> Create([FromForm] CreateProductCommand command)
         {
             var result = await _mediator.Send(command);
             return Ok(result); 
