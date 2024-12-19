@@ -4,9 +4,7 @@ using Serilog;
 using Serilog.Sinks.SystemConsole.Themes;
 using ProjectPersonal.Application;
 using ProjectPersonal.Infrastructure;
-using Newtonsoft.Json;
 using System.Reflection;
-using ProjectPersonal.Application.Common.Json;
 using Microsoft.OpenApi.Models;
 using ProjectPersonal.Middleware;
 
@@ -91,6 +89,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseStaticFiles();
 app.UseCors();
 app.UseAuthentication();
 app.UseAuthorization();

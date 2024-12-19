@@ -31,4 +31,8 @@
     <ProjectReference Include="..\ProjectPersonal.Infrastructure\ProjectPersonal.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\uploads\" />
+  </ItemGroup>
+
 </Project>
